@@ -4,10 +4,10 @@ import './AuthBtn.scss';
 import Auth from '@components/Auth/Modal.jsx';
 import StartPage from '../../pages/StartPage.jsx';
 
-const AuthBtn = ({test}) => {
+const AuthBtn = ({clickHandler, text}) => {
 
     return (
-        <button className='auth_btn' onClick={test}>Войти</button>
+        <button className='auth_btn' onClick={clickHandler}>{text}</button>
     )
 };
 
