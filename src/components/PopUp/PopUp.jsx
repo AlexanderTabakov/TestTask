@@ -13,7 +13,7 @@ const Popup = ({openTitle, children}) => {
                     <div className="popup_content">
                         {children}
             <button className="close-icon" onClick={togglePopup }>
-              Закрыть окно
+              Закрыть
             </button>
                     </div>
                 </div>

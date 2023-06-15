@@ -1,4 +1,16 @@
 
 .auth_btn {
-    color: red
+    color: white;
+    border-radius: 5px;
+    padding: 8px;
+    background-color: coral;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 2vw;
+    top: 50px;
+    cursor: pointer;
+
 }

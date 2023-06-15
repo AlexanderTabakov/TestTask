@@ -8,18 +8,82 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: scale(0);
+    pointer-events: none;
+    opacity: 0;
+    transition: 0.5s;
 
 
     &__content {
         padding: 20px;
         border-radius: 12px;
         background-color: aliceblue;
-        height: 200px;
-        width: 200px;
+        width: 460px;
+        height: fit-content;
+        top: 50%;
+        left: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
     }
 }
 
+.title {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.title > button {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 1px solid orange;
+    background-color:white;
+    rotate: 45deg;
+    cursor: pointer;
+    font-size: 24px;
+
+}
+
+.title > button:hover{
+    transform: scale(1.3);
+}
+
+
 .auth.active {
-    transform: scale(1);
+    opacity: 1;
+    pointer-events: all;
+}
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    //align-items: center;
+    //padding: 40px;
+}
+
+.form > input {
+    height: 30px;
+    border-radius: 5px;
+    border: #b2afac;
+}
+
+.forgotten {
+    color: #1F8FDE;
+}
+
+.forgotten :hover {
+     cursor: pointer;
+     transform: scale(1.05);
+ }
+
+.submitBtn {
+    border-radius: 8px;
+    background-color: #ec75ac;
+    border: none;
+    margin: 20px;
+    padding: 10px;
+    cursor: pointer;
 }
