@@ -1,3 +1,6 @@
+$primary-color-popup1: #ffffff;
+$font-stack:  'Roboto', sans-serif;
+
 .popup {
     height: 100vh;
     width: 100vw;
@@ -14,20 +17,23 @@
 .popup_content {
     padding: 20px;
     border-radius: 12px;
-    background-color: #46c2c2;
+    background-color: $primary-color-popup1;
     height: 400px;
     width: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    font-family: 'Roboto', sans-serif;
 
 }
 
 .popup_content>button {
-    padding: 5px;
-    border-radius: 4px;
-    border-color: deepskyblue;
+    padding: 10px;
+    border-radius: 10px;
+    border-color: #b9b9b4;
+    font-family:$font-stack;
+    background-color: white;
 }
 
 .popup_content > button:hover {

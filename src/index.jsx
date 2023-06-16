@@ -2,9 +2,8 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 
 import './style.scss';
-import AuthBtn from '@components/AuthBtn/AuthBtn';
-import StartPage from './pages/StartPage';
 
+import StartPage from './pages/StartPage.jsx';
 
 const rootContainer = document.getElementById('root');
 const root = createRoot(rootContainer);
@@ -14,5 +13,5 @@ const DemoPage = () => (
 );
 
 root.render(
-   <StartPage/>
+   <StartPage/>,
 );

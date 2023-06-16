@@ -1,3 +1,6 @@
+$font-stack:  'Roboto', sans-serif;
+$primary-color: #ffffff;
+
 .auth {
     height: 100vh;
     width: 100vw;
@@ -16,32 +19,36 @@
     &__content {
         padding: 20px;
         border-radius: 12px;
-        background-color: aliceblue;
-        width: 460px;
+        background-color: $primary-color;
+        width: 350px;
         height: fit-content;
         top: 50%;
         left: 50%;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
+        gap: 20px;
+
     }
 }
 
 .title {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+
 }
 
 .title > button {
-    height: 30px;
-    width: 30px;
+    //height: 30px;
+    //width: 30px;
     border-radius: 50%;
-    border: 1px solid orange;
-    background-color:white;
+    border: none;
+    background-color:$primary-color;
     rotate: 45deg;
     cursor: pointer;
-    font-size: 24px;
+    font-size: 50px;
+    color: #1F8FDE;
 
 }
 
@@ -65,13 +72,17 @@
 }
 
 .form > input {
-    height: 30px;
+    height: 50px;
     border-radius: 5px;
-    border: #b2afac;
+    border: #e1e0d0 2px solid;
+    font-size: 20px;
 }
 
 .forgotten {
     color: #1F8FDE;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
 }
 
 .forgotten :hover {
@@ -80,10 +91,30 @@
  }
 
 .submitBtn {
-    border-radius: 8px;
+    border-radius: 30px;
     background-color: #ec75ac;
     border: none;
-    margin: 20px;
+    margin: 20px 0 20px 0;
     padding: 10px;
     cursor: pointer;
+}
+
+.submitBtn:hover {
+    transform: scale(1.05);
+}
+
+.writeToSupport {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: #cbc8c8;
+}
+
+.writeToSupport:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.text  {
+    font-family: $font-stack;
 }
