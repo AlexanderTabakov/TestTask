@@ -1,4 +1,5 @@
-$primary-color-popup1: #eae5e5;
+$primary-color-popup1: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(214,233,148,1) 100%);
+//$primary-color-popup1: #fefce5;
 $font-stack:  'Roboto', sans-serif;
 
 .popup {
@@ -17,7 +18,7 @@ $font-stack:  'Roboto', sans-serif;
 .popup_content {
     padding: 20px;
     border-radius: 12px;
-    background-color: $primary-color-popup1;
+    background: $primary-color-popup1;
     height: 400px;
     width: 400px;
     display: flex;
@@ -29,11 +30,21 @@ $font-stack:  'Roboto', sans-serif;
 }
 
 .popup_content>button {
-    padding: 10px;
-    border-radius: 14px;
-    border-color: #efefe4;
-    font-family:$font-stack;
-    background-color: white;
+
+    border-radius: 50%;
+    border: none;
+    background: rgba(0,0,0,0);
+    rotate: 45deg;
+    cursor: pointer;
+    font-size: 50px;
+    color: #be621d;
+
+    //padding: 10px;
+    //border-radius: 14px;
+    //border-color: #f9f0f0;
+    //font-family:$font-stack;
+    //background-color: #f9f0f0;
+    //border: none;
 }
 
 .popup_content > button:hover {

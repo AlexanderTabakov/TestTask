@@ -29,7 +29,8 @@ module.exports = (env) => {
       context: path.resolve(__dirname, 'src'),
       output: {
          filename: filename('js'),
-         path: path.resolve(__dirname, 'dist'),
+         // path: path.resolve(__dirname, 'dist'),
+         path: path.resolve(__dirname, 'build'),
       },
       devtool: isDev ? 'source-map' : false,
       devServer: {

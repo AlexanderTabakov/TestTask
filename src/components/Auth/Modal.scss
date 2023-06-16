@@ -44,7 +44,7 @@ $primary-color: #ffffff;
     //width: 30px;
     border-radius: 50%;
     border: none;
-    background-color:$primary-color;
+    background: rgba(0,0,0,0);
     rotate: 45deg;
     cursor: pointer;
     font-size: 50px;
@@ -92,11 +92,12 @@ $primary-color: #ffffff;
 
 .submitBtn {
     border-radius: 30px;
-    background-color: #ec75ac;
+    background-color: #c366db;
     border: none;
     margin: 20px 0 20px 0;
     padding: 10px;
     cursor: pointer;
+    color: white;
 }
 
 .submitBtn:hover {
@@ -117,4 +118,5 @@ $primary-color: #ffffff;
 
 .text  {
     font-family: $font-stack;
+    font-size: 22px;
 }
