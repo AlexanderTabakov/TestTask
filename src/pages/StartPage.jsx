@@ -36,10 +36,10 @@ const StartPage = () => {
 
             <div className='forgotten text'>
                <Popup openTitle={'Я забыл пароль'} children={
-                  <div style={{ color: 'black' }}>Как можно было забыть пароль 1234?</div>
+                  <div className={'text'} style={{ color: 'black' }}>Как можно было забыть пароль 1234?</div>
                }/>
-               <Popup openTitle={'Регистрация text'} children={
-                  <div style={{ color: 'black' }}>Впервые тут? Рады тебя видеть!</div>
+               <Popup openTitle={'Регистрация'} children={
+                  <div className={'text'} style={{ color: 'black' }}>Впервые тут? Рады тебя видеть!</div>
 
                }/>
             </div>
